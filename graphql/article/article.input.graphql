@@ -1,0 +1,4 @@
+input CreateArticleInput{
+    title:String!
+    body:String!
+}

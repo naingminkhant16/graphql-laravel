@@ -1,0 +1,5 @@
+extend type Mutation {
+    createArticle(
+        input:CreateArticleInput! @spread
+    ): Article @field(resolver: "App\\GraphQL\\Resolvers\\ArticleResolver@create") @guard
+}

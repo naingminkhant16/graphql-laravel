@@ -1,0 +1,6 @@
+#import user/*.graphql
+#import article/*.graphql
+
+type Query
+
+type Mutation

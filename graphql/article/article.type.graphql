@@ -1,0 +1,9 @@
+type Article {
+    id: ID!
+    title: String!
+    body: String!
+    slug: String!
+    published: Boolean
+    published_at: DateTime
+    author: User!
+}

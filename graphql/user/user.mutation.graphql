@@ -1,0 +1,10 @@
+extend type Mutation {
+
+    registerUser(input: RegisterUserInput! @spread): User @field(resolver: "App\\GraphQL\\Resolvers\\AuthResolver@register")
+
+    login(input:LoginInput! @spread):AuthPayload! @field(resolver: "App\\GraphQL\\Resolvers\\AuthResolver@login")
+
+    logout:Boolean! @field(resolver: "App\\GraphQL\\Resolvers\\AuthResolver@logout") @guard
+
+}
+
